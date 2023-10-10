@@ -1,0 +1,22 @@
+# Object files
+*.o
+
+# Libraries
+*.a
+so_long
+so_long_bonus
+
+# Executables
+*.exe
+*.out
+*.app
+*.i*86
+*.x86_64
+*.hex
+
+*.swp
+.DS_Store
+**/.DS_Store
+
+# Testers
+so_long_tester/
