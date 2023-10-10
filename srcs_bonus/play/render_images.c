@@ -6,7 +6,7 @@
 /*   By: iwozniak <iwozniak@student.42abudhabi.ae>  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/03 10:37:44 by iwozniak          #+#    #+#             */
-/*   Updated: 2023/10/10 12:06:23 by iwozniak         ###   ########.fr       */
+/*   Updated: 2023/10/10 14:11:30 by iwozniak         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,7 +29,7 @@ void	render_wall(t_data *data, int random)
 	}
 }
 
-void	render_collectible(t_data *data, int random)
+void	render_sheep_eat(t_data *data, int random)
 {
 	if (random == 0)
 		mlx_put_image_to_window(data->mlx, data->win,

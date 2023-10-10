@@ -6,7 +6,7 @@
 /*   By: iwozniak <iwozniak@student.42abudhabi.ae>  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/16 13:19:01 by iwozniak          #+#    #+#             */
-/*   Updated: 2023/10/10 13:51:14 by iwozniak         ###   ########.fr       */
+/*   Updated: 2023/10/10 14:13:56 by iwozniak         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -84,6 +84,10 @@ typedef struct s_data
 	char	*error_msg;
 }			t_data;
 
+/* ************************************************************************** */
+/*                                 MAP                                        */
+/* ************************************************************************** */
+
 /* ./srcs/map/check_extension.c */
 int		check_map_extension(char *str);
 
@@ -111,6 +115,10 @@ void	check_before_array(t_list *list, t_data *data, int fd);
 void	allocate_map_memory(char ***map, int row, int column);
 void	map_to_array(t_list *list, t_data *data);
 void	create_map_copy(t_data *data);
+
+/* ************************************************************************** */
+/*                                 PLAY                                       */
+/* ************************************************************************** */
 
 /* ./srcs/play/cleanup.c */
 void	free_map(t_data *data);

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   display_msg.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: iwozniak <iwozniak@student.42abudhabi.a    +#+  +:+       +#+        */
+/*   By: iwozniak <iwozniak@student.42abudhabi.ae>  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/06 17:36:09 by iwozniak          #+#    #+#             */
-/*   Updated: 2023/10/08 14:45:50 by iwozniak         ###   ########.fr       */
+/*   Updated: 2023/10/10 14:10:06 by iwozniak         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,7 +37,7 @@ void	display_sheep_count(t_data *data)
 
 	sheep_count = ft_itoa(data->collected);
 	mlx_string_put(data->mlx, data->win, 10, data->map_row * 64 + 46, GRAY,
-		"Sheeps eaten: ");
+		"Sheep captured: ");
 	mlx_string_put(data->mlx, data->win, 105, data->map_row * 64 + 46, WHITE,
 		sheep_count);
 	free(sheep_count);

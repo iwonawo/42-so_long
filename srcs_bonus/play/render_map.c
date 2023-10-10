@@ -6,7 +6,7 @@
 /*   By: iwozniak <iwozniak@student.42abudhabi.ae>  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/29 11:27:01 by iwozniak          #+#    #+#             */
-/*   Updated: 2023/10/10 12:26:26 by iwozniak         ###   ########.fr       */
+/*   Updated: 2023/10/10 14:11:44 by iwozniak         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -64,7 +64,7 @@ void	put_images_to_window(t_data *data)
 		if (wolf_is_near(data))
 			render_sheep_scared(data, random_position);
 		else
-			render_collectible(data, random_position);
+			render_sheep_eat(data, random_position);
 	}
 	else if (data->map[data->map_y][data->map_x] == 'E')
 		render_exit(data);

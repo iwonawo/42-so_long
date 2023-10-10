@@ -6,7 +6,7 @@
 /*   By: iwozniak <iwozniak@student.42abudhabi.ae>  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/30 11:14:42 by iwozniak          #+#    #+#             */
-/*   Updated: 2023/10/06 23:31:54 by iwozniak         ###   ########.fr       */
+/*   Updated: 2023/10/10 14:02:56 by iwozniak         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@ void	init_data(t_data *data)
 	data->found_exit = 0;
 	data->move_count = 0;
 	data->player_move_dir = MOVE_RIGHT;
-	data->display_msg = "Wolf is ready to spill some blood...";
+	data->display_msg = "Wolf is ready to go on an adventure!";
 	data->display_color = WHITE;
 }
 
