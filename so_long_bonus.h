@@ -6,7 +6,7 @@
 /*   By: iwozniak <iwozniak@student.42abudhabi.ae>  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/16 13:19:01 by iwozniak          #+#    #+#             */
-/*   Updated: 2023/10/10 16:09:58 by iwozniak         ###   ########.fr       */
+/*   Updated: 2023/10/10 18:30:19 by iwozniak         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -119,7 +119,7 @@ void	map_validation(t_data *data, char *str);
 /* ./srcs_bonus/map/read_map.c */
 void	map_to_list(int fd, t_data *data);
 void	check_before_array(t_list *list, t_data *data, int fd);
-void	allocate_map_memory(char ***map, int row, int column);
+void	allocate_map_mem(char ***map, int row, int column);
 void	map_to_array(t_list *list, t_data *data);
 void	create_map_copy(t_data *data);
 

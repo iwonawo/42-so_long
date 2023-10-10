@@ -6,7 +6,7 @@
 /*   By: iwozniak <iwozniak@student.42abudhabi.ae>  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/20 11:27:18 by iwozniak          #+#    #+#             */
-/*   Updated: 2023/10/06 17:33:25 by iwozniak         ###   ########.fr       */
+/*   Updated: 2023/10/10 18:27:09 by iwozniak         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -54,7 +54,7 @@ void	check_before_array(t_list *map_list, t_data *data, int fd)
 	}
 }
 
-void	allocate_map_memory(char ***map, int row, int column)
+void	allocate_map_mem(char ***map, int row, int column)
 {
 	int	i;
 
@@ -67,7 +67,7 @@ void	allocate_map_memory(char ***map, int row, int column)
 	i = 0;
 	while (i < row)
 	{
-		(*map)[i] = (char *)malloc(column * sizeof(int));
+		(*map)[i] = (char *)malloc(column * sizeof(char));
 		if (!(*map)[i])
 		{
 			ft_printf("Error\nMemory allocation failed.");
@@ -86,7 +86,7 @@ void	map_to_array(t_list *map_list, t_data *data)
 
 	data->map_row = ft_lstsize(map_list);
 	data->map_col = ft_strlen(map_list->content) - 1;
-	allocate_map_memory(&data->map, data->map_row, data->map_col);
+	allocate_map_mem(&data->map, data->map_row, ft_strlen(map_list->content));
 	i = 0;
 	while (map_list != NULL)
 	{
@@ -110,7 +110,7 @@ void	create_map_copy(t_data *data)
 	int	i;
 	int	j;
 
-	allocate_map_memory(&data->map_cpy, data->map_row, data->map_col);
+	allocate_map_mem(&data->map_cpy, data->map_row, data->map_col);
 	i = 0;
 	while (i < data->map_row)
 	{
