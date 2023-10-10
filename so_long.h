@@ -6,7 +6,7 @@
 /*   By: iwozniak <iwozniak@student.42abudhabi.ae>  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/16 13:19:01 by iwozniak          #+#    #+#             */
-/*   Updated: 2023/10/10 14:13:56 by iwozniak         ###   ########.fr       */
+/*   Updated: 2023/10/10 16:10:10 by iwozniak         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -63,7 +63,6 @@ typedef struct s_data
 	void	*mlx;
 	void	*win;
 	char	*map_str;
-	char	**map_memory;
 	char	**map;
 	char	**map_cpy;
 	int		map_row;
