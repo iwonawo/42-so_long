@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   update_msg.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: iwozniak <iwozniak@student.42abudhabi.ae>  +#+  +:+       +#+        */
+/*   By: iwozniak <iwozniak@student.42abudhabi.a    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/08 14:48:20 by iwozniak          #+#    #+#             */
-/*   Updated: 2023/10/10 14:16:31 by iwozniak         ###   ########.fr       */
+/*   Updated: 2023/10/11 08:18:55 by iwozniak         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,8 @@ void	update_hunting_msg(t_data *data)
 	}
 	else
 	{
-		data->display_msg = "Wolf is full and on a journey to find a cozy cave.";
+		data->display_msg = "Wolf is full and on a journey to find a cozy \
+		cave.";
 		data->display_color = GREEN;
 	}
 }
