@@ -12,7 +12,7 @@ This project is a very small 2D game. Its purpose is to work with textures, spri
 To play So Long, follow these steps.
 
 1. Clone the repository:
-https://github.com/iwonawo/so_long.git
+https://github.com/iwonawo/42-so_long.git
 
 2. Update path to the library depending on the system you're using:
 
